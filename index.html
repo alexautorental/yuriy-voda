@@ -1,0 +1,1393 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Юрий · водоподготовка для загородного дома</title>
+<meta name="description" content="Подбор, монтаж, настройка и сервис систем водоподготовки для загородных домов. Москва и Подмосковье.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f2f6f7">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a1519">
+<!-- Черновик: строку robots убрать вместе с плашкой, если страницу нужно показывать в поиске -->
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230b6f7e'/%3E%3Cpath d='M16 6.5c4.2 5 7.2 8.6 7.2 12.3a7.2 7.2 0 0 1-14.4 0c0-3.7 3-7.3 7.2-12.3z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f2f6f7;
+    --bg-grid: rgba(11, 111, 126, 0.08);
+    --surface: #ffffff;
+    --surface-2: #e7eff1;
+    --ink: #0e2430;
+    --ink-2: #3d5561;
+    --line: #d2dfe3;
+    --line-strong: #a7bec5;
+    --accent: #0b6f7e;
+    --accent-hover: #095a66;
+    --accent-ink: #ffffff;
+    --accent-soft: #dcf0f2;
+    --accent-line: #9fd0d8;
+    --ripple: #0b6f7e;
+    --header-bg: rgba(242, 246, 247, 0.9);
+    --note-bg: #fff2c2;
+    --note-line: #e3c45a;
+    --note-ink: #3b2e00;
+    --bp-bg: #0d2a35;
+    --bp-surface: #113441;
+    --bp-ink: #e8f4f6;
+    --bp-ink-2: #a9c8cf;
+    --bp-line: #2d5a68;
+    --bp-grid: rgba(150, 220, 232, 0.08);
+    --bp-accent: #73d5e2;
+    --shadow: 0 1px 2px rgba(14, 36, 48, 0.05), 0 14px 34px -18px rgba(14, 36, 48, 0.25);
+    --radius: 16px;
+    --gutter: 20px;
+    --header-h: 64px;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, "Roboto Mono", "Liberation Mono", monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a1519;
+      --bg-grid: rgba(115, 213, 226, 0.07);
+      --surface: #0f1f25;
+      --surface-2: #0c1a1f;
+      --ink: #e4eef0;
+      --ink-2: #a3b8bf;
+      --line: #20363e;
+      --line-strong: #3a5962;
+      --accent: #5ec4d3;
+      --accent-hover: #7fd2de;
+      --accent-ink: #052027;
+      --accent-soft: #112f36;
+      --accent-line: #2a5d67;
+      --ripple: #5ec4d3;
+      --header-bg: rgba(10, 21, 25, 0.88);
+      --note-bg: #2b2410;
+      --note-line: #6b5a1d;
+      --note-ink: #f3e3a3;
+      --bp-bg: #0c232b;
+      --bp-surface: #10303a;
+      --bp-ink: #e4f1f3;
+      --bp-ink-2: #9fbec5;
+      --bp-line: #2a5662;
+      --bp-grid: rgba(115, 213, 226, 0.07);
+      --bp-accent: #73d5e2;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.35), 0 14px 34px -18px rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  @media (min-width: 720px) {
+    :root { --gutter: 32px; }
+  }
+
+  @media (max-width: 359px) {
+    :root { --gutter: 16px; }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font);
+    font-size: 17px;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: clamp(34px, 4.6vw + 16px, 58px);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+
+  h2 {
+    font-size: clamp(28px, 2.2vw + 20px, 42px);
+    letter-spacing: -0.02em;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+
+  p { margin: 0; }
+
+  a { color: var(--accent); }
+
+  :focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .sprite {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  .lead {
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--ink-2);
+  }
+
+  @media (min-width: 720px) {
+    .lead { font-size: 19px; }
+  }
+
+  /* Плашка черновика */
+  .draft {
+    background: var(--note-bg);
+    color: var(--note-ink);
+    border-bottom: 1px solid var(--note-line);
+  }
+
+  .draft__in {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .draft__in .icon {
+    width: 22px;
+    height: 22px;
+    margin-top: 1px;
+  }
+
+  /* Шапка */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--line);
+    -webkit-backdrop-filter: saturate(1.5) blur(14px);
+    backdrop-filter: saturate(1.5) blur(14px);
+  }
+
+  .topbar__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: var(--header-h);
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .brand__mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    display: grid;
+    place-items: center;
+    flex: none;
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  .brand__mark .icon {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.8;
+  }
+
+  .brand__text {
+    display: grid;
+    line-height: 1.15;
+  }
+
+  .brand__name { font-size: 18px; font-weight: 700; }
+  .brand__role { font-size: 14px; color: var(--ink-2); }
+
+  .nav { display: none; }
+
+  @media (min-width: 980px) {
+    .nav {
+      display: flex;
+      gap: 28px;
+      margin-left: auto;
+      margin-right: 8px;
+    }
+    .nav a {
+      color: var(--ink-2);
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .nav a:hover { color: var(--ink); }
+  }
+
+  /* Кнопки */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 50px;
+    padding: 12px 22px;
+    border: 1.5px solid transparent;
+    border-radius: 12px;
+    font: inherit;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .btn .icon {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+  }
+
+  .btn--primary {
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  .btn--primary:hover { background: var(--accent-hover); }
+
+  .btn--ghost {
+    background: var(--surface);
+    color: var(--ink);
+    border-color: var(--line-strong);
+  }
+
+  .btn--ghost:hover { border-color: var(--accent); }
+
+  .btn--small {
+    min-height: 42px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  /* Первый экран */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    padding: 40px 0 48px;
+    scroll-margin-top: var(--header-h);
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background-image:
+      linear-gradient(var(--bg-grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+    background-size: 28px 28px;
+    -webkit-mask-image: radial-gradient(120% 90% at 100% 0%, #000 20%, transparent 72%);
+    mask-image: radial-gradient(120% 90% at 100% 0%, #000 20%, transparent 72%);
+  }
+
+  .hero__ripples {
+    position: absolute;
+    z-index: -1;
+    top: -250px;
+    right: -240px;
+    width: 560px;
+    height: 560px;
+    color: var(--ripple);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .hero__grid {
+    display: grid;
+    gap: 36px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .eyebrow .icon { width: 18px; height: 18px; }
+
+  .hero h1 { margin-top: 16px; }
+  .hero .lead { margin-top: 18px; max-width: 34em; }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  @media (min-width: 920px) {
+    .hero { padding: 80px 0 88px; }
+    .hero__grid {
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+      gap: 64px;
+      align-items: center;
+    }
+    .hero__ripples {
+      top: -260px;
+      right: -200px;
+      width: 760px;
+      height: 760px;
+      opacity: 0.5;
+    }
+  }
+
+  /* Коротко о системе */
+  .spec {
+    padding: 6px 20px 10px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .spec__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--line-strong);
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+  }
+
+  .spec__title .icon { color: var(--accent); }
+
+  .spec dl { margin: 0; }
+
+  .spec__row {
+    display: grid;
+    grid-template-columns: 6.5em minmax(0, 1fr);
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .spec__row:last-child { border-bottom: 0; }
+
+  .spec dt {
+    padding-top: 1px;
+    font-family: var(--mono);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-2);
+  }
+
+  .spec dd {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  /* Разделы */
+  .section {
+    padding: 56px 0;
+    scroll-margin-top: var(--header-h);
+  }
+
+  @media (min-width: 920px) {
+    .section { padding: 96px 0; }
+  }
+
+  .section-head {
+    max-width: 760px;
+    margin-bottom: 28px;
+  }
+
+  .section-head .lead { margin-top: 14px; }
+
+  .label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 14px;
+    font-family: var(--mono);
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .label b { font-weight: 600; }
+
+  .label__rule {
+    width: 32px;
+    height: 1.5px;
+    background: currentColor;
+    opacity: 0.55;
+  }
+
+  /* Что делаю */
+  .cards {
+    display: grid;
+    gap: 14px;
+  }
+
+  @media (min-width: 700px) {
+    .cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card--wide { grid-column: 1 / -1; }
+  }
+
+  .card, .tip {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+
+  .card__head, .tip__head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .card__icon, .tip__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    display: grid;
+    place-items: center;
+    flex: none;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .card__icon .icon, .tip__icon .icon { width: 28px; height: 28px; }
+
+  .card p, .tip p { color: var(--ink-2); }
+
+  .card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 11px;
+    border: 1px solid var(--accent-line);
+    border-radius: 999px;
+    font-family: var(--mono);
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--accent);
+  }
+
+  .chain {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 14px 16px;
+    list-style: none;
+    counter-reset: cart;
+    background: var(--surface-2);
+    border-radius: 12px;
+  }
+
+  .chain li {
+    counter-increment: cart;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    color: var(--ink);
+  }
+
+  .chain li::before {
+    content: counter(cart);
+    width: 26px;
+    height: 26px;
+    flex: none;
+    display: grid;
+    place-items: center;
+    border: 1.5px solid var(--accent);
+    border-radius: 50%;
+    font-family: var(--mono);
+    font-size: 14px;
+    line-height: 1;
+    color: var(--accent);
+  }
+
+  @media (max-width: 359px) {
+    .card, .tip { padding: 18px; }
+    .card__icon, .tip__icon { width: 44px; height: 44px; }
+    h3 { font-size: 19px; }
+  }
+
+  .equip {
+    display: grid;
+    gap: 14px;
+    margin-top: 18px;
+    padding: 22px 20px;
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius);
+  }
+
+  @media (min-width: 700px) {
+    .equip { padding: 28px 30px; }
+  }
+
+  .equip p { max-width: 46em; }
+
+  .equip__head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .equip__icon {
+    width: 48px;
+    height: 48px;
+    flex: none;
+    border-radius: 13px;
+    display: grid;
+    place-items: center;
+    background: var(--surface);
+    color: var(--accent);
+  }
+
+  .equip__icon .icon { width: 28px; height: 28px; }
+
+  .equip .equip__note {
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    color: var(--ink-2);
+  }
+
+  /* Как работаю */
+  .section--band {
+    background: var(--surface-2);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .steps {
+    position: relative;
+    display: grid;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .steps::before {
+    content: "";
+    position: absolute;
+    left: 41px;
+    top: 30px;
+    bottom: 30px;
+    width: 2px;
+    background: var(--accent-line);
+  }
+
+  .step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 10px;
+    padding: 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+
+  .step__num {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .step h3 {
+    margin: 0;
+    font-size: 19px;
+  }
+
+  .step p {
+    grid-column: 1 / -1;
+    color: var(--ink-2);
+  }
+
+  @media (min-width: 720px) {
+    .steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .steps::before { display: none; }
+  }
+
+  @media (min-width: 1040px) {
+    .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  }
+
+  /* Советы */
+  .tips {
+    display: grid;
+    gap: 14px;
+  }
+
+  @media (min-width: 880px) {
+    .tips {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+  }
+
+  .tip--key {
+    border-color: var(--accent-line);
+    box-shadow: inset 4px 0 0 var(--accent);
+  }
+
+  /* Пример объекта */
+  .section--blueprint {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: var(--bp-bg);
+    color: var(--bp-ink);
+  }
+
+  .section--blueprint::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(var(--bp-grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--bp-grid) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .section--blueprint .label { color: var(--bp-accent); }
+  .section--blueprint .lead { color: var(--bp-ink); }
+
+  .case {
+    display: grid;
+    gap: 32px;
+  }
+
+  .case__text h2 { margin-bottom: 14px; }
+
+  .case__text .case__desc {
+    margin-top: 14px;
+    color: var(--bp-ink-2);
+  }
+
+  @media (min-width: 920px) {
+    .case {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 72px;
+      align-items: start;
+    }
+  }
+
+  .case__scheme {
+    margin: 0;
+    padding: 22px 20px;
+    background: var(--bp-bg);
+    border: 1px solid var(--bp-line);
+    border-radius: var(--radius);
+  }
+
+  .flow {
+    display: grid;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .flow__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+  }
+
+  .flow__item > span:last-child { padding-top: 3px; }
+
+  .flow__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 26px;
+    top: 52px;
+    bottom: -16px;
+    width: 3px;
+    margin-left: -1.5px;
+    background: repeating-linear-gradient(to bottom, var(--bp-accent) 0 6px, transparent 6px 11px);
+    opacity: 0.75;
+    animation: flow 1.2s linear infinite;
+  }
+
+  @keyframes flow {
+    to { background-position: 0 11px; }
+  }
+
+  .flow__icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    background: var(--bp-surface);
+    border: 1.5px solid var(--bp-line);
+    color: var(--bp-accent);
+  }
+
+  .flow__icon .icon { width: 28px; height: 28px; }
+
+  .flow__title {
+    display: block;
+    font-size: 17px;
+    font-weight: 650;
+    line-height: 1.3;
+    color: var(--bp-ink);
+  }
+
+  .flow__note {
+    display: block;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 1.45;
+    color: var(--bp-ink-2);
+  }
+
+  .flow__branch {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 6px 12px 6px 10px;
+    border: 1px dashed var(--bp-line);
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.35;
+    color: var(--bp-ink);
+  }
+
+  .flow__branch .icon {
+    width: 20px;
+    height: 20px;
+    color: var(--bp-accent);
+  }
+
+  .flow__item--top > span:last-child { padding-top: 15px; }
+
+  .case__scheme figcaption {
+    margin-top: 18px;
+    font-size: 16px;
+    color: var(--bp-ink-2);
+  }
+
+  /* Вопросы */
+  .faq {
+    display: grid;
+    gap: 10px;
+    max-width: 840px;
+  }
+
+  .faq details {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    scroll-margin-top: calc(var(--header-h) + 16px);
+    transition: border-color 0.2s ease;
+  }
+
+  .faq details[open] { border-color: var(--accent-line); }
+
+  .faq summary {
+    position: relative;
+    display: block;
+    padding: 18px 64px 18px 20px;
+    list-style: none;
+    cursor: pointer;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+
+  .faq summary::-webkit-details-marker { display: none; }
+
+  .faq summary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 28px;
+    height: 28px;
+    margin-top: -14px;
+    border: 1.5px solid var(--accent-line);
+    border-radius: 50%;
+    background:
+      linear-gradient(var(--accent), var(--accent)) center / 11px 2px no-repeat,
+      linear-gradient(var(--accent), var(--accent)) center / 2px 11px no-repeat;
+    transition: transform 0.2s ease;
+  }
+
+  .faq details[open] > summary::after { transform: rotate(45deg); }
+
+  .faq summary:focus-visible { outline-offset: -3px; }
+
+  .faq__answer {
+    padding: 0 20px 20px;
+    color: var(--ink-2);
+  }
+
+  .faq__answer p + p { margin-top: 10px; }
+
+  /* Контакты */
+  .contact {
+    display: grid;
+    gap: 24px;
+    padding: 28px 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+  }
+
+  .contact h2 { margin-bottom: 12px; }
+
+  @media (min-width: 820px) {
+    .contact {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: center;
+      gap: 40px;
+      padding: 44px;
+    }
+  }
+
+  .placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px 20px;
+    background: var(--surface-2);
+    border: 2px dashed var(--line-strong);
+    border-radius: 14px;
+    font-size: 17px;
+    color: var(--ink-2);
+  }
+
+  .placeholder__icons {
+    display: inline-flex;
+    gap: 6px;
+    flex: none;
+    color: var(--accent);
+  }
+
+  /* Подвал */
+  .footer {
+    padding: 28px 0 36px;
+    border-top: 1px solid var(--line);
+    font-size: 16px;
+    color: var(--ink-2);
+  }
+
+  .footer__in {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px 24px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .flow__item::after { animation: none; }
+    .btn, .faq details, .faq summary::after { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3c3.3 3.9 6.2 7.4 6.2 11a6.2 6.2 0 0 1-12.4 0C5.8 10.4 8.7 6.9 12 3z"/><path d="M9.3 14.4a2.8 2.8 0 0 0 2.3 2.6"/></symbol>
+  <symbol id="i-iron" viewBox="0 0 24 24"><rect x="8.5" y="2.5" width="7" height="3.5" rx="1"/><path d="M7 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v10.5a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M7 11.4c1.2.8 2.3.8 3.5 0s2.3-.8 3.5 0 2.3.8 3 0"/><path d="M10 15h.01M14 15h.01M12 18h.01"/></symbol>
+  <symbol id="i-soft" viewBox="0 0 24 24"><rect x="8.5" y="2.5" width="7" height="3.5" rx="1"/><path d="M7 9a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v10.5a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><circle cx="10.5" cy="10.5" r="1.1"/><circle cx="13.5" cy="13" r="1.1"/><circle cx="10.5" cy="15.5" r="1.1"/><circle cx="13.5" cy="18" r="1.1"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><rect x="5.5" y="3" width="13" height="3.5" rx="1"/><path d="M2.5 4.75h3M18.5 4.75h3"/><path d="M7 6.5h10V18a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3z"/><path d="M10 9.5v8M12 9.5v8M14 9.5v8"/></symbol>
+  <symbol id="i-glass" viewBox="0 0 24 24"><path d="M6.5 3.5h11l-1.4 15.6a2 2 0 0 1-2 1.9H9.9a2 2 0 0 1-2-1.9z"/><path d="M7.3 9.4c1.6-.8 3.1-.8 4.7 0s3.1.8 4.7 0"/></symbol>
+  <symbol id="i-tap" viewBox="0 0 24 24"><path d="M2.5 9h3M18.5 9h3"/><path d="M5.5 5.5v7l13-7v7z"/><path d="M12 9V3.5M9.5 3.5h5"/><path d="M12 15c1.3 1.6 2.2 2.8 2.2 3.8a2.2 2.2 0 0 1-4.4 0c0-1 .9-2.2 2.2-3.8z"/></symbol>
+  <symbol id="i-valve" viewBox="0 0 24 24"><rect x="4" y="3.5" width="16" height="11" rx="2.5"/><rect x="7" y="6.5" width="6" height="3.5" rx=".8"/><path d="M16.5 7h.01M16.5 10h.01"/><path d="M9 14.5V17h6v-2.5"/><path d="M5.5 21.5c0-2.8 2.9-4.5 6.5-4.5s6.5 1.7 6.5 4.5"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><circle cx="12" cy="10.5" r="7.5"/><path d="M12 10.5l3.5-3"/><path d="M7.5 10.5h1M15.5 10.5h1M12 6v1"/><path d="M12 18v3M9.5 21h5"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="3"/><path d="M12.8 7.8 9.6 12.4h4.2l-3.2 4.6"/></symbol>
+  <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+  <symbol id="i-house" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.6V20h13V9.6"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-pipe" viewBox="0 0 24 24"><path d="M2.5 7.5H14a5 5 0 0 1 5 5v9"/><path d="M2.5 13H12a1.5 1.5 0 0 1 1.5 1.5v7"/><path d="M6 6v8.5M12 18h8.5"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 0 1 3 3L8 18.5z"/><path d="M13.5 7l3 3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 4.5h14a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9l-4.5 3.5v-3.5H5A1.5 1.5 0 0 1 3.5 15V6A1.5 1.5 0 0 1 5 4.5z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<!-- ПЛАШКА ЧЕРНОВИКА. Когда Юрий проверит тексты и впишет контакты, удалить этот блок целиком. -->
+<div class="draft" role="note">
+  <div class="wrap draft__in">
+    <svg class="icon" aria-hidden="true"><use href="#i-pencil"></use></svg>
+    <p><strong>Черновик страницы для&nbsp;Юрия.</strong> Проверьте тексты и&nbsp;впишите контакты, потом плашку уберём.</p>
+  </div>
+</div>
+<!-- КОНЕЦ ПЛАШКИ ЧЕРНОВИКА -->
+
+<header class="topbar">
+  <div class="wrap topbar__in">
+    <a class="brand" href="#top">
+      <span class="brand__mark"><svg class="icon" aria-hidden="true"><use href="#i-drop"></use></svg></span>
+      <span class="brand__text">
+        <span class="brand__name">Юрий</span>
+        <span class="brand__role">водоподготовка</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Разделы страницы">
+      <a href="#services">Что делаю</a>
+      <a href="#process">Как работаю</a>
+      <a href="#tips">Советы</a>
+      <a href="#case">Пример</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn--primary btn--small" href="#contacts">Связаться</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <svg class="hero__ripples" viewBox="0 0 560 560" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor">
+        <ellipse cx="280" cy="280" rx="44" ry="16" stroke-width="1.6" opacity="0.9"/>
+        <ellipse cx="280" cy="280" rx="96" ry="35" stroke-width="1.4" opacity="0.7"/>
+        <ellipse cx="280" cy="280" rx="152" ry="55" stroke-width="1.2" opacity="0.5"/>
+        <ellipse cx="280" cy="280" rx="210" ry="76" stroke-width="1" opacity="0.35"/>
+        <ellipse cx="280" cy="280" rx="272" ry="98" stroke-width="1" opacity="0.2"/>
+      </g>
+    </svg>
+
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow"><svg class="icon" aria-hidden="true"><use href="#i-drop"></use></svg>Москва и&nbsp;Подмосковье</p>
+        <h1 id="hero-title">Очистка воды для загородного дома</h1>
+        <p class="lead">Меня зовут Юрий. Подбираю систему водоподготовки под&nbsp;воду конкретного дома, монтирую, настраиваю, показываю хозяевам, как с&nbsp;ней обращаться, и&nbsp;дальше обслуживаю.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacts">Связаться<svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+          <a class="btn btn--ghost" href="#process">Как я&nbsp;работаю</a>
+        </div>
+      </div>
+
+      <div class="spec" role="group" aria-labelledby="spec-title">
+        <p class="spec__title"><span id="spec-title">Коротко</span><svg class="icon" aria-hidden="true"><use href="#i-valve"></use></svg></p>
+        <dl>
+          <div class="spec__row"><dt>Клапаны</dt><dd>Clack, США</dd></div>
+          <div class="spec__row"><dt>Железо</dt><dd>воздушная подушка, без&nbsp;компрессора</dd></div>
+          <div class="spec__row"><dt>Жёсткость</dt><dd>смола, соль в&nbsp;таблетках</dd></div>
+          <div class="spec__row"><dt>Доочистка</dt><dd>колба Big&nbsp;Blue&nbsp;10</dd></div>
+          <div class="spec__row"><dt>Кухня</dt><dd>прямоточный&nbsp;осмос без&nbsp;бака</dd></div>
+          <div class="spec__row"><dt>Сервис</dt><dd>не&nbsp;реже раза в&nbsp;год</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label"><b>01</b><span class="label__rule" aria-hidden="true"></span>узлы системы</p>
+        <h2 id="services-title">Что делаю</h2>
+        <p class="lead">Каждую систему собираю под&nbsp;воду конкретного дома. Вот из&nbsp;каких узлов она может состоять.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__head">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-iron"></use></svg></span>
+            <h3>Обезжелезивание</h3>
+          </div>
+          <p>Убираю из&nbsp;воды железо. Обезжелезиватель работает на&nbsp;воздушной подушке: без&nbsp;отдельной аэрационной колонны и&nbsp;без&nbsp;компрессора, который шумит.</p>
+          <p class="card__tags"><span class="tag">клапан&nbsp;Clack</span></p>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-soft"></use></svg></span>
+            <h3>Умягчение</h3>
+          </div>
+          <p>Снижаю жёсткость воды. В&nbsp;умягчителе смола, для&nbsp;её&nbsp;регенерации нужна таблетированная соль. Регенерация идёт по&nbsp;расходу воды.</p>
+          <p class="card__tags"><span class="tag">клапан&nbsp;Clack</span></p>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-flask"></use></svg></span>
+            <h3>Механическая доочистка</h3>
+          </div>
+          <p>После баллонов ставлю колбу Big&nbsp;Blue&nbsp;10 с&nbsp;полипропиленовым картриджем. Она ловит муть, которая бывает после промывок.</p>
+          <p class="card__tags"><span class="tag">Big&nbsp;Blue&nbsp;10</span></p>
+        </article>
+
+        <article class="card">
+          <div class="card__head">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-glass"></use></svg></span>
+            <h3>Питьевая вода на&nbsp;кухне</h3>
+          </div>
+          <p>Ставлю прямоточный обратный осмос без&nbsp;бака. Обслуживания у&nbsp;него меньше, чем у&nbsp;осмоса с&nbsp;баком. Внутри три картриджа:</p>
+          <ol class="chain">
+            <li>предфильтр</li>
+            <li>мембрана</li>
+            <li>угольный постфильтр</li>
+          </ol>
+          <p>Мембрана служит около трёх лет, о&nbsp;замене подскажут индикаторы. Система сама периодически промывается.</p>
+        </article>
+
+        <article class="card card--wide">
+          <div class="card__head">
+            <span class="card__icon"><svg class="icon" aria-hidden="true"><use href="#i-tap"></use></svg></span>
+            <h3>Пробоотборный кран</h3>
+          </div>
+          <p>На&nbsp;выходе ставлю пробоотборный кран, чтобы брать пробу на&nbsp;анализ. Самую достоверную информацию о&nbsp;воде даёт именно анализ.</p>
+        </article>
+      </div>
+
+      <div class="equip">
+        <div class="equip__head">
+          <span class="equip__icon"><svg class="icon" aria-hidden="true"><use href="#i-valve"></use></svg></span>
+          <h3>Оборудование</h3>
+        </div>
+        <p>Ставлю профессиональное оборудование с&nbsp;мощной гидравликой: американские клапаны управления&nbsp;Clack. Ресурс у&nbsp;него практически неограниченный, меняются только расходники и&nbsp;засыпки в&nbsp;баллонах.</p>
+          <p class="equip__note">По&nbsp;моему опыту, бытовые «кабинетные» системы на&nbsp;сложной воде служат недолго.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--band" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label"><b>02</b><span class="label__rule" aria-hidden="true"></span>порядок работы</p>
+        <h2 id="process-title">Как работаю</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num" aria-hidden="true">01</span>
+          <h3>Анализ воды</h3>
+          <p>Начинаю с&nbsp;воды: самую достоверную информацию о&nbsp;ней даёт анализ.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">02</span>
+          <h3>Подбор</h3>
+          <p>Подбираю оборудование под&nbsp;эту воду и&nbsp;этот дом.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">03</span>
+          <h3>Монтаж</h3>
+          <p>Монтирую оборудование и&nbsp;запускаю систему.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">04</span>
+          <h3>Настройка под воду</h3>
+          <p>Выставляю настройки клапанов. Промывки баллонов ставлю на&nbsp;удобное время, например рано утром, и&nbsp;развожу, чтобы они не&nbsp;шли одновременно.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">05</span>
+          <h3>Инструктаж</h3>
+          <p>Показываю хозяевам, как пользоваться системой. Для&nbsp;подсказок потом есть видеоинструкции.</p>
+        </li>
+        <li class="step">
+          <span class="step__num" aria-hidden="true">06</span>
+          <h3>Сервис</h3>
+          <p>Обслуживание желательно не&nbsp;реже раза в&nbsp;год. Многое решаю онлайн, например настройку по&nbsp;телефону.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="tips" aria-labelledby="tips-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label"><b>03</b><span class="label__rule" aria-hidden="true"></span>для&nbsp;хозяев</p>
+        <h2 id="tips-title">Советы для дома</h2>
+        <p class="lead">Простые вещи, которые советую хозяевам.</p>
+      </div>
+
+      <div class="tips">
+        <article class="tip">
+          <div class="tip__head">
+            <span class="tip__icon"><svg class="icon" aria-hidden="true"><use href="#i-gauge"></use></svg></span>
+            <h3>Редуктор давления</h3>
+          </div>
+          <p>Если дом на&nbsp;поселковом водопроводе, поставьте редуктор давления. Он&nbsp;срезает скачки давления и&nbsp;гидроудары.</p>
+        </article>
+
+        <article class="tip">
+          <div class="tip__head">
+            <span class="tip__icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"></use></svg></span>
+            <h3>Стабилизатор и&nbsp;бесперебойник</h3>
+          </div>
+          <p>Электронику котла и&nbsp;водоочистки подключайте через стабилизатор напряжения. Бесперебойник ставят специалисты после запуска.</p>
+        </article>
+
+        <article class="tip tip--key">
+          <div class="tip__head">
+            <span class="tip__icon"><svg class="icon" aria-hidden="true"><use href="#i-sliders"></use></svg></span>
+            <h3>Настройки не&nbsp;меняйте</h3>
+          </div>
+          <p>Сами настройки системы не&nbsp;трогайте, иначе железо и&nbsp;жёсткость могут проскочить в&nbsp;дом. Нужно что-то поменять? Позвоните, многое настроим по&nbsp;телефону.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--blueprint" id="case" aria-labelledby="case-title">
+    <div class="wrap case">
+      <div class="case__text">
+        <p class="label"><b>04</b><span class="label__rule" aria-hidden="true"></span>объект</p>
+        <h2 id="case-title">Пример объекта</h2>
+        <p class="lead">Загородный дом под&nbsp;Москвой, вода из&nbsp;поселкового водопровода.</p>
+        <p class="case__desc">Вода сначала проходит обезжелезиватель на&nbsp;воздушной подушке, потом умягчитель. Оба на&nbsp;клапанах&nbsp;Clack. После баллонов стоит колба Big&nbsp;Blue&nbsp;10, на&nbsp;выходе пробоотборный кран. Для&nbsp;питья на&nbsp;кухне прямоточный&nbsp;осмос.</p>
+      </div>
+
+      <figure class="case__scheme">
+        <ol class="flow" aria-label="Путь воды по узлам">
+          <li class="flow__item">
+            <span class="flow__icon"><svg class="icon" aria-hidden="true"><use href="#i-pipe"></use></svg></span>
+            <span><span class="flow__title">Поселковый водопровод</span><span class="flow__note">вода на&nbsp;входе</span></span>
+          </li>
+          <li class="flow__item">
+            <span class="flow__icon"><svg class="icon" aria-hidden="true"><use href="#i-iron"></use></svg></span>
+            <span><span class="flow__title">Обезжелезиватель</span><span class="flow__note">воздушная подушка, клапан&nbsp;Clack</span></span>
+          </li>
+          <li class="flow__item">
+            <span class="flow__icon"><svg class="icon" aria-hidden="true"><use href="#i-soft"></use></svg></span>
+            <span><span class="flow__title">Умягчитель</span><span class="flow__note">клапан&nbsp;Clack</span></span>
+          </li>
+          <li class="flow__item">
+            <span class="flow__icon"><svg class="icon" aria-hidden="true"><use href="#i-flask"></use></svg></span>
+            <span><span class="flow__title">Колба Big&nbsp;Blue&nbsp;10</span><span class="flow__note">полипропиленовый картридж</span></span>
+          </li>
+          <li class="flow__item">
+            <span class="flow__icon"><svg class="icon" aria-hidden="true"><use href="#i-tap"></use></svg></span>
+            <span><span class="flow__title">Пробоотборный кран</span><span class="flow__note">проба на&nbsp;анализ</span></span>
+          </li>
+          <li class="flow__item flow__item--top">
+            <span class="flow__icon"><svg class="icon" aria-hidden="true"><use href="#i-house"></use></svg></span>
+            <span>
+              <span class="flow__title">Дом</span>
+              <span class="flow__branch"><svg class="icon" aria-hidden="true"><use href="#i-glass"></use></svg>на&nbsp;кухне прямоточный&nbsp;осмос</span>
+            </span>
+          </li>
+        </ol>
+        <figcaption>Схема упрощена.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="label"><b>05</b><span class="label__rule" aria-hidden="true"></span>ответы</p>
+        <h2 id="faq-title">Вопросы</h2>
+      </div>
+
+      <div class="faq">
+        <details id="vopros-servis">
+          <summary>Как часто нужен сервис?</summary>
+          <div class="faq__answer">
+            <p>Желательно не&nbsp;реже раза в&nbsp;год. Многое решаю онлайн: подсказываю настройку по&nbsp;телефону, есть видеоинструкции.</p>
+          </div>
+        </details>
+
+        <details id="vopros-shum">
+          <summary>Не&nbsp;будет мешать шум промывки?</summary>
+          <div class="faq__answer">
+            <p>Промывки баллонов ставлю на&nbsp;удобное время, например рано утром, и&nbsp;развожу по&nbsp;времени, чтобы они не&nbsp;шли одновременно. Если время неудобное, позвоните, перенастроим по&nbsp;телефону.</p>
+            <p>Отдельного компрессора, который шумит, у&nbsp;обезжелезивателя на&nbsp;воздушной подушке нет.</p>
+          </div>
+        </details>
+
+        <details id="vopros-oshibka">
+          <summary>На&nbsp;клапане ошибка. Что делать?</summary>
+          <div class="faq__answer">
+            <p>Позвоните мне. Сами настройки не&nbsp;меняйте, иначе железо и&nbsp;жёсткость могут проскочить в&nbsp;дом. Многое можно решить по&nbsp;телефону.</p>
+          </div>
+        </details>
+
+        <details id="vopros-membrana">
+          <summary>Сколько служит мембрана осмоса?</summary>
+          <div class="faq__answer">
+            <p>Около трёх лет. Когда пора менять картриджи, подскажут индикаторы. Система сама периодически промывается.</p>
+          </div>
+        </details>
+
+        <details id="vopros-resurs">
+          <summary>Сколько прослужит оборудование?</summary>
+          <div class="faq__answer">
+            <p>Ресурс у&nbsp;профессионального оборудования на&nbsp;клапанах&nbsp;Clack практически неограниченный. Меняются только расходники и&nbsp;засыпки в&nbsp;баллонах.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contacts" aria-labelledby="contacts-title">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <p class="label"><b>06</b><span class="label__rule" aria-hidden="true"></span>связь</p>
+          <h2 id="contacts-title">Контакты</h2>
+          <p class="lead">Юрий, водоподготовка для&nbsp;загородных домов. Москва и&nbsp;Подмосковье.</p>
+        </div>
+        <!-- Сюда вписать телефон и мессенджеры. Номер лучше сделать ссылкой tel:, тогда на телефоне он набирается одним нажатием. -->
+        <div class="placeholder">
+          <span class="placeholder__icons"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg></span>
+          <p>Телефон и&nbsp;мессенджеры: впишите</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <span>Юрий · водоподготовка для&nbsp;загородных домов</span>
+    <span>Москва и&nbsp;Подмосковье</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    'use strict';
+
+    var questions = document.querySelectorAll('.faq details[id]');
+
+    // Ссылка вида страница#vopros-membrana сразу открывает нужный ответ.
+    function openFromHash() {
+      var id;
+      try {
+        id = decodeURIComponent(window.location.hash.slice(1));
+      } catch (err) {
+        return;
+      }
+      if (!id) return;
+      var target = document.getElementById(id);
+      if (target && target.tagName === 'DETAILS' && !target.open) {
+        target.open = true;
+      }
+    }
+
+    // Открытый вопрос попадает в адрес страницы: такую ссылку можно переслать клиенту.
+    function rememberInAddress(item) {
+      if (!window.history || typeof window.history.replaceState !== 'function') return;
+      var base = window.location.href.split('#')[0];
+      try {
+        if (item.open) {
+          window.history.replaceState(null, '', base + '#' + item.id);
+        } else if (window.location.hash === '#' + item.id) {
+          window.history.replaceState(null, '', base);
+        }
+      } catch (err) {
+        // Например, страница открыта как файл: адрес просто не меняем.
+      }
+    }
+
+    Array.prototype.forEach.call(questions, function (item) {
+      item.addEventListener('toggle', function () {
+        rememberInAddress(item);
+      });
+    });
+
+    window.addEventListener('hashchange', openFromHash);
+    openFromHash();
+  })();
+</script>
+</body>
+</html>
