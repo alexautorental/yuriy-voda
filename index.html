@@ -8,8 +8,6 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f2f6f7">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a1519">
-<!-- Черновик: строку robots убрать вместе с плашкой, если страницу нужно показывать в поиске -->
-<meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%230b6f7e'/%3E%3Cpath d='M16 6.5c4.2 5 7.2 8.6 7.2 12.3a7.2 7.2 0 0 1-14.4 0c0-3.7 3-7.3 7.2-12.3z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
   :root {
@@ -988,6 +986,7 @@
     .flow__item::after { animation: none; }
     .btn, .faq details, .faq summary::after { transition: none; }
   }
+  .phones { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
 </style>
 </head>
 <body>
@@ -1011,14 +1010,6 @@
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </svg>
 
-<!-- ПЛАШКА ЧЕРНОВИКА. Когда Юрий проверит тексты и впишет контакты, удалить этот блок целиком. -->
-<div class="draft" role="note">
-  <div class="wrap draft__in">
-    <svg class="icon" aria-hidden="true"><use href="#i-pencil"></use></svg>
-    <p><strong>Черновик страницы для&nbsp;Юрия.</strong> Проверьте тексты и&nbsp;впишите контакты, потом плашку уберём.</p>
-  </div>
-</div>
-<!-- КОНЕЦ ПЛАШКИ ЧЕРНОВИКА -->
 
 <header class="topbar">
   <div class="wrap topbar__in">
@@ -1325,10 +1316,9 @@
           <h2 id="contacts-title">Контакты</h2>
           <p class="lead">Юрий, водоподготовка для&nbsp;загородных домов. Москва и&nbsp;Подмосковье.</p>
         </div>
-        <!-- Сюда вписать телефон и мессенджеры. Номер лучше сделать ссылкой tel:, тогда на телефоне он набирается одним нажатием. -->
-        <div class="placeholder">
-          <span class="placeholder__icons"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg></span>
-          <p>Телефон и&nbsp;мессенджеры: впишите</p>
+        <div class="phones">
+          <a class="btn btn--primary" href="tel:+74957825118"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>+7&nbsp;495&nbsp;782-51-18</a>
+          <a class="btn btn--ghost" href="tel:+79267705481"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>+7&nbsp;926&nbsp;770-54-81</a>
         </div>
       </div>
     </div>
